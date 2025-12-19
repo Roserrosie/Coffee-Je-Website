@@ -1,0 +1,148 @@
+:root {
+    --bg-cream: #fdfbf7;
+    --card-green: #bbc59f;
+    --text-dark: #1a1a1a;
+    --text-brown: #8d7b68;
+    --btn-brown: #c09e83;
+    --btn-orange: #e6a57e;
+    --footer-bg: #1c1c1c;
+
+    --font-main: "Poppins", sans-serif;
+    --font-heading: "Bebas Neue", sans-serif;
+    --font-logo: "Kaushan Script", cursive;
+    --font-text: "Nunito", sans-serif;
+}
+
+body {
+    background-color: var(--bg-cream);
+    font-family: var(--font-main);
+    color: var(--text-dark);
+}
+
+.sub-header {
+    font-family: var(--font-logo);
+    font-style: normal;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.main-header {
+    font-family: var(--font-heading);
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: var(--btn-brown);
+    text-transform: uppercase;
+    font-size: 4rem;
+    line-height: 1;
+}
+
+.btn-filter {
+    background-color: var(--btn-brown);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 8px 24px;
+    font-family: var(--font-main);
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.btn-filter:hover,
+.btn-filter.active {
+    background-color: #a38568;
+    color: white;
+}
+
+.product-card {
+    position: relative;
+    border: none;
+    background: transparent;
+    padding-bottom: 20px;
+}
+
+.img-wrapper {
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    border-radius: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.product-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    background-color: var(--card-green);
+    border-radius: 0 0 30px 30px;
+    margin-top: -60px;
+    padding: 70px 20px 20px 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.badge-pill {
+    display: inline-block;
+    background-color: rgba(160, 110, 80, 0.2);
+    color: #5c4b43;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-family: var(--font-text);
+    font-size: 0.75rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.product-title {
+    font-family: var(--font-main);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin: 0;
+    color: #1a1a1a;
+    line-height: 1.2;
+}
+
+.product-subtitle {
+    font-family: var(--font-text);
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.btn-add {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--btn-orange);
+    border: none;
+    color: #1a1a1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: transform 0.2s;
+}
+
+.btn-add:hover {
+    transform: scale(1.1);
+}
+
+
+    /* 给产品项添加过渡动画 */
+    .product-item {
+        transition: all 0.4s ease-in-out; /* 0.4秒的平滑过渡 */
+        opacity: 1;       /* 默认完全显示 */
+        transform: scale(1); /* 默认原大小 */
+    }
+
+    /* 这是一个辅助类，用来触发隐藏状态 */
+    .product-item.hiding {
+        opacity: 0;       /* 透明度变0 */
+        transform: scale(0.9); /* 稍微缩小一点，产生“收缩消失”的视觉效果 */
+        pointer-events: none; /* 隐藏过程中禁止点击 */
+    }
+

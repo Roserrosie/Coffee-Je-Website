@@ -1,0 +1,106 @@
+:root {
+    --bg-cream: #fcfdf2;
+    --card-peach: #f3d9c7;
+    --card-green: #cad2a2;
+    --text-gold: #b08d57;
+    --footer-dark: #1a1a1a;
+}
+
+body {
+    background-color: var(--bg-cream);
+    font-family: 'Poppins', sans-serif;
+    color: #000;
+}
+
+.brand-logo-top {
+    font-family: 'Kaushan Script', cursive;
+    color: var(--card-green);
+    font-size: 2.8rem; 
+}
+
+.guide-title {
+    font-family: 'Bebas Neue', sans-serif;
+    color: var(--text-gold);
+    font-size: 5rem;
+    letter-spacing: 4px;
+    margin-bottom: 0;
+}
+
+.guide-subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.guide-card {
+    border-radius: 40px;
+    padding: 30px;
+    transition: transform 0.3s;
+}
+
+.bg-peach { background-color: var(--card-peach); }
+.bg-green { background-color: var(--card-green); }
+
+.rounded-coffee {
+    border-radius: 30px;
+    width: 100%;
+}
+
+.drink-name {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 1.8rem; 
+    margin-bottom: 5px;
+}
+
+.drink-stats {
+    font-family: 'Nunito', sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+    opacity: 0.8;
+}
+
+.arrow-icon-btn {
+    background-color: #000;
+    color: #fff;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.footer-custom {
+    background-color: var(--footer-dark);
+    color: #fff;
+border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+}
+
+.brand-logo-footer {
+    font-family: 'Kaushan Script', cursive;
+    color: var(--card-green);
+    font-size: 1.8rem;
+}
+
+.footer-heading {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--card-green);
+    margin-bottom: 25px;
+}
+
+.footer-text, .footer-links a {
+    font-family: 'Nunito', sans-serif;
+    color: #bbb;
+    text-decoration: none;
+    font-size: 0.9rem; 
+}
+
+@media (max-width: 768px) {
+    .guide-title { font-size: 2.5rem; }
+    .guide-card { padding: 20px; }
+}

@@ -1,0 +1,251 @@
+:root {
+    --bg-color: #fefef2;
+    --card-green: #c5d69e;
+    --text-dark: #1a1a1a;
+    --footer-bg: #1c1c1c;
+
+    --font-main: "Poppins", sans-serif;
+    --font-heading: "Bebas Neue", sans-serif;
+    --font-logo: "Kaushan Script", cursive;
+    --font-text: "Nunito", sans-serif;
+}
+
+body {
+    background-color: var(--bg-color);
+    font-family: var(--font-main);
+    color: var(--text-dark);
+}
+
+.nav-container {
+    padding: 40px 0;
+}
+
+.back-btn {
+    text-decoration: none;
+    color: #000;
+    font-weight: 400;
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.back-btn:hover {
+    opacity: 0.7;
+}
+
+.hero-image-card {
+    position: relative;
+    border-radius: 40px;
+    overflow: hidden;
+    min-height: 500px;
+    width: 100%;
+}
+
+.hero-image-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero-title {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    color: white;
+    font-family: var(--font-heading);
+    font-size: 5rem;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    line-height: 1;
+    letter-spacing: 2px;
+}
+
+.info-box {
+    background-color: var(--card-green);
+    border-radius: 30px;
+    padding: 30px;
+}
+
+.section-title {
+    font-family: var(--font-main);
+    font-weight: 700;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+.section-desc {
+    font-family: var(--font-text);
+    font-size: 1rem;
+    color: #222;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.stat-card {
+    background-color: var(--card-green);
+    border-radius: 30px;
+    padding: 20px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.stat-card:hover {
+    transform: translateY(-3px);
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+    color: #333;
+    font-family: var(--font-text);
+}
+
+.stat-value {
+    font-family: var(--font-main);
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.icon-temp {
+    color: #ff6b6b;
+}
+.icon-milk {
+    color: #4ecdc4;
+}
+.icon-time {
+    color: #45b7d1;
+}
+.icon-grind {
+    color: #d4a373;
+}
+
+.instructions-card {
+    background-color: var(--card-green);
+    border-radius: 30px;
+    padding: 40px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 7px;
+    top: 10px;
+    bottom: 30px;
+    width: 2px;
+    background-color: white;
+    z-index: 1;
+}
+
+.step-item {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 30px;
+    font-family: var(--font-text);
+    font-size: 1rem;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.step-item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.step-item.last-step {
+    margin-bottom: 0;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+}
+
+.step-item.last-step::after {
+    display: none;
+}
+
+.check-icon {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    margin-left: -28px;
+    color: #1a1a1a;
+}
+
+.footer {
+    background-color: var(--footer-bg);
+    color: white;
+    border-radius: 50px 50px 0 0;
+    padding: 80px 0;
+    margin-top: 100px;
+}
+
+.footer-logo {
+    font-family: var(--font-logo);
+    font-size: 2.5rem;
+    color: var(--card-green);
+    margin-bottom: 20px;
+}
+
+.footer h5 {
+    color: var(--card-green);
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.footer a {
+    color: #999;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+    font-family: var(--font-text);
+}
+
+.footer a:hover {
+    color: white;
+}
+.footer p {
+    color: #999;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-family: var(--font-text);
+}
+
+@media (max-width: 991px) {
+    .hero-image-card {
+        height: 400px;
+    }
+    .instructions-card {
+        height: auto;
+    }
+}

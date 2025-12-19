@@ -1,0 +1,340 @@
+:root {
+  --bg-cream: #fffff5;
+  --color-sage: #b0be93;
+  --color-sage-dark: #9ca883;
+  --color-olive: #8a9a5b;
+  --color-clay: #d9aa84;
+  --color-brown-light: #e6c2a9;
+  --color-brown-dark: #c99f82;
+  --text-dark: #1a1a1a;
+  --font-logo: "Kaushan Script", cursive;
+  --font-heading: "Bebas Neue", sans-serif;
+  --font-body: "Nunito", sans-serif;
+  --font-ui: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--bg-cream);
+  font-family: var(--font-body);
+  color: var(--text-dark);
+  overflow-x: hidden;
+}
+
+.brand-logo {
+  font-family: var(--font-logo);
+  color: var(--color-sage) !important;
+  text-decoration: none;
+}
+
+.brand-heading {
+  font-family: var(--font-heading);
+  letter-spacing: 1px;
+  font-size: 48px !important;
+  margin-bottom: 2.5rem;
+  line-height: 1.2;
+}
+
+.body-text {
+  font-family: var(--font-body);
+  line-height: 1.8;
+}
+
+.font-accent,
+.btn {
+  font-family: var(--font-ui);
+}
+
+.fixed-menu-btn {
+  position: fixed;
+  top: 30px;
+  right: 40px;
+  width: 85px;
+  height: 85px;
+  background-color: #000;
+  border-radius: 50%;
+  border: none;
+  z-index: 1050;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  padding: 0;
+}
+
+.fixed-menu-btn:hover {
+  transform: scale(1.05);
+}
+
+.fixed-menu-btn span {
+  display: block;
+  width: 40px;
+  height: 4px;
+  background-color: var(--color-sage);
+  border-radius: 4px;
+  margin: 5px 0;
+}
+
+#offcanvasNavbar.show ~ .fixed-menu-btn {
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0.5);
+  pointer-events: none;
+}
+
+.offcanvas {
+  z-index: 1060;
+}
+
+.text-sage {
+  color: var(--color-sage) !important;
+}
+
+.text-clay {
+  color: var(--color-clay) !important;
+}
+
+.bg-cream {
+  background-color: var(--bg-cream);
+}
+
+.bg-sage {
+  background-color: var(--color-sage);
+}
+
+.bg-clay {
+  background-color: var(--color-clay);
+}
+
+.bg-light-brown {
+  background-color: var(--color-brown-light);
+}
+
+.bg-dark-brown {
+  background-color: var(--color-brown-dark);
+}
+
+.text-dark-brown {
+  color: #5d4037;
+}
+
+.btn-sage {
+  background-color: var(--color-sage);
+  color: #fff;
+  border: none;
+  padding: 12px 30px;
+}
+
+.btn-sage:hover {
+  background-color: #9da882;
+  color: #fff;
+}
+
+.btn-sage-outline {
+padding: 12px 30px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  font-weight: bold;
+  background-color: transparent; /* 初始状态背景透明 */
+  border: 2px solid;
+}
+
+.btn-guide-green {
+border-color: var(--color-sage); /* 初始绿色边框 */
+  color: var(--color-sage);        /* 初始文字绿色 */
+}
+
+.btn-guide-green:hover {
+background-color: var(--color-sage) !important; /* Hover 变实心绿 */
+  color: #fff !important;
+}
+
+/* --- 3. 橙色按钮版本 (初始实心 -> Hover 变线框) --- */
+.btn-guide-orange {
+border-color: #000000;           /* 初始状态：黑色边框 */
+  color: #000000;                  /* 初始状态：黑色文字 */
+  background-color: transparent;
+}
+
+.btn-guide-orange:hover {
+background-color: var(--color-clay) !important; /* Hover：背景变橙色 */
+  border-color: var(--color-clay) !important;     /* Hover：边框也同步变橙色 */
+  color: #ffffff !important;
+}
+
+.btn-custom-green {
+    background-color: #9da882; /* 这是一个接近你图片里的绿色 */
+    color: white !important;    /* 强制白色字体 */
+    border: none;               /* 去掉边框 */
+    transition: 0.3s;           /* 增加点击动画感 */
+}
+
+/* 鼠标悬停时的效果 */
+.btn-custom-green:hover {
+    background-color: #7a8c56; /* 悬停时深一点点 */
+    color: white !important;
+}
+.btn-olive {
+  background-color: var(--color-olive);
+  color: #fff;
+  border: none;
+}
+
+.btn-olive:hover {
+  background-color: #728248;
+  color: #fff;
+}
+
+.btn-light-brown-btn {
+  background-color: var(--color-brown-light);
+  color: #000;
+  border: none;
+  font-weight: bold;
+}
+
+.main-img {
+  border-radius: 50px;
+}
+
+.custom-card {
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s;
+  padding: 2rem !important;
+}
+
+.custom-card:hover {
+  transform: translateY(-5px);
+}
+
+.form-control::placeholder {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.form-control:focus {
+  background-color: var(--color-sage-dark);
+  color: white;
+  box-shadow: none;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #000000;
+  background-color: transparent
+    
+}
+
+.custom-table tr:last-child td {
+  border-bottom: none;
+}
+
+.form-control-custom {
+  background-color: #d9aa84 !important;
+  border: none;
+  color: white;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+  padding: 1rem 1.5rem;
+}
+
+.form-control-custom:focus {
+  background-color: #c59b76 !important;
+  color: white;
+  box-shadow: 0 0 0 0.25rem rgba(217, 170, 132, 0.25);
+}
+
+.btn-submit-custom {
+  background-color: #c19a7b;
+  width: 100px;
+  height: 40px;
+  border: none;
+  transition: transform 0.2s;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 !important;
+}
+
+.btn-submit-custom:hover {
+  background-color: #a88569;
+  transform: scale(1.05);
+}
+
+.contact-pill {
+  background-color: var(--color-brown-light);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  padding: 1rem !important;
+  margin-bottom: 1rem;
+}
+
+.map-container {
+  min-height: 300px;
+  background-color: #eee;
+}
+
+footer h5.brand-heading {
+  font-size: 48px !important;
+  margin-bottom: 2rem;
+  line-height: 1.2;
+  color: #b0be93;
+}
+
+footer li {
+  margin-bottom: 12px;
+}
+
+.hero-section .brand-heading {
+  font-size: 5rem !important;
+  letter-spacing: 3px;
+  line-height: 1.1 !important;
+  margin-bottom: 2rem;
+}
+
+.hero-section .body-text {
+  font-size: 1.25rem !important;
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  .fixed-menu-btn {
+    width: 60px;
+    height: 60px;
+    top: 20px;
+    right: 20px;
+  }
+
+  .fixed-menu-btn span {
+    width: 25px;
+    height: 3px;
+    margin: 3px 0;
+  }
+
+  footer h5.brand-heading {
+    font-size: 36px !important;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-section .brand-heading {
+    font-size: 4rem !important;
+    line-height: 1.1 !important;
+  }
+}
+
+@media (min-width: 992px) {
+  .hero-section .brand-heading {
+    font-size: 8rem !important;
+    line-height: 1.1 !important;
+  }
+
+  .hero-section .body-text {
+    font-size: 1.35rem !important;
+    width: 85% !important;
+  }
+}

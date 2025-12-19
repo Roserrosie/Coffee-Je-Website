@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us - Coffee Je</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Nunito:ital,wght@0,400;0,700;1,400&family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+<!--navbar-->
+    <nav class="navbar pt-4">
+      <div class="container justify-content-center">
+        <a class="navbar-brand brand-logo fs-1" href="#"><img src="Image/logo.png" alt="" height="75" /></a>
+      </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-end bg-cream" tabindex="-1" id="offcanvasNavbar">
+      <div class="offcanvas-header">
+        <div class="offcanvas-title brand-logo fs-2"><img src="Image/logo.png" alt=""  width="137" height="45" ></div>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-center align-items-center h-75 gap-4 fs-3 brand-heading text-uppercase">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="aboutus.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="coffeguide.html">Coffee GUIDE</a></li>
+          <li class="nav-item"><a class="nav-link" href="comunity.html">Comunity</a></li>
+          <li class="nav-item"><a class="nav-link" href="shop.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <button class="fixed-menu-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <section class="contact-section mt-5 pt-5 pb-5">
+      <div class="container mt-4">
+        <div class="bg-sage rounded-5 p-4 p-lg-5">
+          <div class="row g-5">
+            <div class="col-lg-5 d-flex flex-column">
+              <div class="mb-4">
+                <h1 class="brand-heading display-3 text-uppercase mb-0">Let's Contact Us</h1>
+                <p class="fst-italic fs-5 body-text fw-bold">Let's us help you</p>
+              </div>
+
+              <div class="d-flex flex-column gap-3 mb-4">
+                <div class="contact-pill text-center py-3 rounded-pill bg-light-brown text-white fs-5 font-accent">
+                  hello@coffeeje.com
+                </div>
+                <div class="contact-pill text-center py-3 rounded-pill bg-light-brown text-white fs-5 font-accent">
+                  011-8888-8888
+                </div>
+              </div>
+
+              <div
+                class="map-container flex-grow-1 rounded-4 overflow-hidden border border-3 border-white shadow-sm"
+                style="min-height: 250px">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.537791254658!2d101.72398217398025!3d3.215260552744761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc3843bfb6a031%3A0x2dc5e067aae3ab84!2sTunku%20Abdul%20Rahman%20University%20of%20Management%20and%20Technology%20(TAR%20UMT)!5e0!3m2!1szh-CN!2smy!4v1765814803444!5m2!1szh-CN!2smy"
+                  width="100%"
+                  height="100%"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                  title="Google Map Location">
+                </iframe>
+              </div>
+            </div>
+
+            <div class="col-lg-7">
+              <div class="bg-light-brown rounded-5 p-4 p-lg-5 h-100">
+                <form>
+                  <div class="mb-4">
+                    <label for="inputName" class="form-label text-white fs-5 font-accent">Name:</label>
+                    <input type="text" class="form-control form-control-custom rounded-pill py-3 px-4" id="inputName" />
+                  </div>
+
+                  <div class="mb-4">
+                    <label for="inputEmail" class="form-label text-white fs-5 font-accent">Email:</label>
+                    <input
+                      type="email"
+                      class="form-control form-control-custom rounded-pill py-3 px-4"
+                      id="inputEmail" />
+                  </div>
+
+                  <div class="mb-4">
+                    <label for="inputMessage" class="form-label text-white fs-5 font-accent">Message:</label>
+                    <textarea
+                      class="form-control form-control-custom rounded-4 py-3 px-4"
+                      id="inputMessage"
+                      rows="5"></textarea>
+                  </div>
+
+                  <div class="text-center mt-5">
+                    <button type="submit" class="btn btn-submit-custom rounded-pill px-5 py-3 shadow-sm">Submit</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+ <!--footer-->
+    <footer class="bg-black text-white py-5 custom-footer">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4">
+            <h4 class="brand-logo fs-2 text-sage mb-3"><img src="Image/logo.png" alt="" /></h4>
+            <p class="small text-secondary w-75 body-text">
+              Slowing down the world, one cup at a time. Experience clarity and let the minute stay.
+            </p>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h5 class="brand-heading text-uppercase mb-3 fs-6">Explore</h5>
+            <ul class="list-unstyled small text-secondary d-flex flex-column gap-2 font-accent">
+              <li>
+                  <a href="aboutus.html" class="text-decoration-none text-white-50 hover-white"> About us </a>
+              </li>
+              <li>
+                  <a href="shop.html" class="text-decoration-none text-white-50 hover-white"> Shop All </a>
+              </li>
+              <li>
+                  <a href="coffedetails.html" class="text-decoration-none text-white-50 hover-white"> Coffee Guide </a>
+              </li>
+              <li>
+                  <a href="comunity.html" class="text-decoration-none text-white-50 hover-white"> Communitty </a>
+              </li>
+              <li>
+                <a href="contact.html" class="text-decoration-none text-white-50 hover-white"> Contact Us </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-3">
+            <h5 class="brand-heading text-uppercase mb-3 fs-6">Contact</h5>
+            <ul class="list-unstyled small text-secondary d-flex flex-column gap-2 font-accent">
+              <li>hello@coffeeje.com</li>
+              <li>+60 12-345 6789</li>
+              <li>Ground Floor, Bangunan Tan Sri Khaw Kai Boh (Block A), Jalan Genting Kelang, Setapak, 53300 Kuala Lumpur</li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h5 class="brand-heading text-uppercase mb-3 fs-6">Social Media</h5>
+            <ul class="list-unstyled small text-secondary d-flex flex-column gap-2 font-accent">
+              <li>Instagram</li>
+              <li>Facebook</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

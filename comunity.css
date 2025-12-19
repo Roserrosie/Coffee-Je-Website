@@ -1,0 +1,269 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-heading: "Bebas Neue", sans-serif;
+    --font-body: "Poppins", sans-serif;
+    --font-logo: "Kaushan Script", cursive;
+    --font-accent: "Nunito", sans-serif;
+}
+
+body {
+    background-color: #fffef5;
+    font-family: var(--font-body);
+    color: #333;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 60px 20px;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-header h1 {
+    font-family: var(--font-heading);
+    font-size: 3.5rem;
+    color: #be9e78;
+    letter-spacing: 2px;
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 1;
+}
+
+.subtitle {
+    font-family: var(--font-accent);
+    font-style: italic;
+    font-weight: 600;
+    margin-top: 5px;
+    font-size: 1rem;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.review-card {
+    background-color: #bdcda1;
+    border-radius: 20px;
+    padding: 25px;
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #ddd;
+}
+
+.review-content h3 {
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 2px;
+}
+
+.stars {
+    color: #1a1a1a;
+    font-size: 0.8rem;
+    margin-bottom: 8px;
+    letter-spacing: 2px;
+}
+
+.review-content p {
+    font-family: var(--font-accent);
+    font-size: 0.9rem;
+    font-style: italic;
+    line-height: 1.4;
+}
+
+.workshops-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.workshop-card {
+    background-color: #bdcda1;
+    border-radius: 20px;
+    padding: 15px 30px 15px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ws-img {
+    width: 80px;
+    height: 80px;
+    border-radius: 12px;
+    object-fit: cover;
+    background-color: #ddd;
+}
+
+.ws-info {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.ws-info h3 {
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.ws-meta {
+    font-family: var(--font-accent);
+    font-size: 0.9rem;
+    font-weight: 600;
+    display: flex;
+    gap: 30px;
+}
+
+.book-btn {
+    background-color: #e8dccf;
+    border: none;
+    padding: 10px 25px;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    font-family: var(--font-body);
+    transition: transform 0.2s;
+}
+
+.book-btn:hover {
+    transform: scale(1.05);
+}
+
+
+
+.logo-text {
+    font-family: var(--font-logo);
+    color: #bdcda1;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+
+
+.address {
+    margin-top: 15px;
+    font-size: 0.85rem !important;
+    color: #ccc;
+}
+
+@media (max-width: 768px) {
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .workshop-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .ws-info {
+        margin: 15px 0;
+    }
+
+    .ws-meta {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+
+}
+
+
+nav.navbar .container {
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+
+
+.navbar-brand img {
+    height: 60px;
+    width: auto;
+}
+@keyframes breathing {
+    0% {
+
+        transform: scale(1);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    }
+    50% {
+
+        transform: scale(1.03); 
+        box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+    }
+    100% {
+
+        transform: scale(1);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    }
+}
+
+
+.review-card:hover,
+.workshop-card:hover {
+
+    animation: breathing 2.5s ease-in-out infinite;
+    
+
+    z-index: 10;
+    position: relative;
+    
+
+    cursor: pointer;
+}
+
+
+
+.custom-footer .container {
+    max-width: 1200px !important;
+    padding-top: 60px !important;
+    padding-bottom: 60px !important;
+}
+
+
+.custom-footer h5.brand-heading {
+    font-size: 1.25rem !important; 
+    margin-bottom: 1.5rem !important;
+    letter-spacing: 1px;
+}
+
+
+.custom-footer .row {
+    --bs-gutter-x: 3rem; 
+}
+
+
+.custom-footer .body-text, 
+.custom-footer ul li {
+    font-size: 0.9rem !important;
+    line-height: 1.6;
+}
+
+.custom-footer {
+    background-color: #000 !important;
+    border-top-left-radius: 50px;  
+    border-top-right-radius: 50px;
+    margin-top: 80px;
+    overflow: hidden;
+}
+

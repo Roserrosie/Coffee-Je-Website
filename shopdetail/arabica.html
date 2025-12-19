@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Details - Coffee Je</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kaushan+Script&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+    
+    <link rel="stylesheet" href="/coffedetails.css">
+        <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+ <!--navbar-->
+    <nav class="navbar pt-4">
+      <div class="container justify-content-center">
+        <a class="navbar-brand brand-logo fs-1" href="index.html"><img src="/Image/logo.png" alt="" height="75" /></a>
+      </div>
+    </nav>
+
+    <div class="offcanvas offcanvas-end bg-cream" tabindex="-1" id="offcanvasNavbar">
+      <div class="offcanvas-header">
+        <div class="offcanvas-title brand-logo fs-2"><img src="/Image/logo.png" alt=""  width="137" height="45" ></div>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-center align-items-center h-75 gap-4 fs-3 brand-heading text-uppercase">
+          <li class="nav-item"><a class="nav-link" href="/index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="/aboutus.html">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" href="/coffeguide.html">Coffee GUIDE</a></li>
+          <li class="nav-item"><a class="nav-link" href="/comunity.html">Comunity</a></li>
+          <li class="nav-item"><a class="nav-link" href="/shop.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <button class="fixed-menu-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <main class="container">
+        <div class="mb-5">
+            <a href="/shop.html" class="back-link">
+                <span class="arrow">←</span> BACK TO SHOP
+            </a>
+        </div>
+
+        <div class="product-main-container mb-5">
+            <div class="row align-items-center g-5">
+                <div class="col-12 col-lg-6 text-center">
+                    <img src="Image/arabica.webp" alt="Robusta" class="img-fluid custom-rounded-img" loading="lazy">
+                </div>
+                
+                <div class="col-12 col-lg-6">
+                    <span class="product-label">Bean</span>
+                    <h1 class="product-name">Arabica</h1>
+                    <h2 class="product-price">RM69.00</h2>
+                    <p class="product-description">
+A rich and creamy classic featuring intense espresso balanced by a thick, velvety layer of frothed milk.                    </p>
+                    
+                    <button class="btn btn-action w-100 mb-4">Chat to us</button>
+                    
+                    <div class="brewing-note-box">
+                        <strong>Brewing Note:</strong>
+                        <p>Best brewed at 93°C using a 1:16 ratio to fully unlock its delicate aromatic profile and clean finish.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </main>
+
+ <!--footer-->
+    <footer class="bg-black text-white py-5 custom-footer">
+      <div class="container">
+        <div class="row gy-4">
+          <div class="col-lg-4">
+            <h4 class="brand-logo fs-2 text-sage mb-3"><img src="/Image/logo.png" alt="" /></h4>
+            <p class="small text-secondary w-75 body-text">
+              Slowing down the world, one cup at a time. Experience clarity and let the minute stay.
+            </p>
+          </div>
+          <div class="col-6 col-lg-2">
+            <h5 class="brand-heading text-uppercase mb-3 fs-6">Explore</h5>
+            <ul class="list-unstyled small text-secondary d-flex flex-column gap-2 font-accent">
+              <li>
+                  <a href="/aboutus.html" class="text-decoration-none text-white-50 hover-white"> About us </a>
+              </li>
+              <li>
+                  <a href="/shop.html" class="text-decoration-none text-white-50 hover-white"> Shop All </a>
+              </li>
+              <li>
+                  <a href="/coffedetails.html" class="text-decoration-none text-white-50 hover-white"> Coffee Guide </a>
+              </li>
+              <li>
+                  <a href="/comunity.html" class="text-decoration-none text-white-50 hover-white"> Communitty </a>
+              </li>
+              <li>
+                <a href="/contact.html" class="text-decoration-none text-white-50 hover-white"> Contact Us </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-6 col-lg-3">
+            <h5 class="brand-heading text-uppercase mb-3 fs-6">Contact</h5>
+            <ul class="list-unstyled small text-secondary d-flex flex-column gap-2 font-accent">
+              <li>hello@coffeeje.com</li>
+              <li>+60 12-345 6789</li>
+              <li>Ground Floor, Bangunan Tan Sri Khaw Kai Boh (Block A), Jalan Genting Kelang, Setapak, 53300 Kuala Lumpur</li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h5 class="brand-heading text-uppercase mb-3 fs-6">Social Media</h5>
+            <ul class="list-unstyled small text-secondary d-flex flex-column gap-2 font-accent">
+              <li>Instagram</li>
+              <li>Facebook</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

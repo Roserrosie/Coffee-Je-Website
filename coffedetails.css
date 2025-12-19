@@ -1,0 +1,115 @@
+:root {
+    --cream-bg: #fcfdf2;      
+    --leaf-green: #cad2a2;    
+    --olive-btn: #8d9e52;     
+    --peach-note: #e4ae8e;    
+    --footer-black: #1a1a1a;  
+    --text-brown: #a68b7c;    
+}
+
+body {
+    background-color: var(--cream-bg);
+    font-family: 'Poppins', sans-serif; 
+    color: #000;
+}
+
+.brand-logo-top {
+    font-family: 'Kaushan Script', cursive;
+    color: var(--leaf-green);
+    font-size: 2.8rem;
+}
+
+.back-link {
+    font-family: 'Nunito', sans-serif;
+     font-style: italic;
+    font-weight: 700;
+    text-decoration: none;
+    color: #000;
+}
+
+.product-main-container {
+    font-family: 'Poppins', sans-serif; 
+    background-color: var(--leaf-green);
+    border-radius: 60px; 
+    padding: 60px;
+}
+
+.custom-rounded-img {
+    border-radius: 50px;
+    width: 100%;
+    max-width: 500px;
+}
+
+.product-label {
+     font-family: 'Bebas Neue', sans-serif;
+    font-size: 2rem;
+    color: var(--text-brown);
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.product-name {
+    font-family: 'Nunito', sans-serif;
+    font-size: 5rem;
+    font-weight: 900;
+    font-style: italic;
+    line-height: 0.9;
+}
+
+.product-price {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+
+.btn-action {
+     font-family: 'Nunito', sans-serif;
+    background-color: var(--olive-btn);
+    color: #fff;
+    border-radius: 15px;
+    padding: 15px;
+    font-weight: 700;
+    font-style: italic;
+    border: none;
+}
+
+.brewing-note-box {
+    background-color: var(--peach-note);
+    border-radius: 25px;
+    padding: 25px;
+}
+
+.footer-dark-section {
+    background-color: var(--footer-black);
+    color: #fff;
+    border-radius: 100px 100px 0 0;
+}
+
+.brand-logo-footer {
+    font-family: 'Kaushan Script', cursive;
+    color: var(--leaf-green);
+    font-size: 1.8rem;
+}
+
+.footer-heading {
+    color: var(--leaf-green);
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.footer-text, .footer-links a {
+    font-family: 'Nunito', sans-serif;
+    color: #bbb;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 992px) {
+    .product-main-container {
+        padding: 40px 25px;
+        border-radius: 40px;
+    }
+    .product-name {
+        font-size: 3.5rem;
+    }
+}
