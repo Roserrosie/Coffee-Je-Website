@@ -1,5 +1,5 @@
 :root {
-  --bg-cream: #fffff5;
+  --bg-cream: #FFF2DD;
   --color-sage: #b0be93;
   --color-sage-dark: #9ca883;
   --color-olive: #8a9a5b;
@@ -13,11 +13,12 @@
   --font-ui: "Poppins", sans-serif;
 }
 
+
+
 body {
-  background-color: var(--bg-cream);
-  font-family: var(--font-body);
-  color: var(--text-dark);
-  overflow-x: hidden;
+  background-color: var(--bg-cream) !important; 
+  margin: 0;
+  padding: 0;
 }
 
 .brand-logo {
@@ -226,7 +227,7 @@ background-color: var(--color-clay) !important;
 .custom-table td {
   padding: 1.5rem 0;
   border-bottom: 1px solid #000000;
-  background-color: transparent
+  background-color: transparent;
     
 }
 
